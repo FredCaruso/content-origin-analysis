@@ -216,3 +216,24 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ============================================================
+# Cole estas linhas NO FINAL do .gitignore do repositorio
+# (o template Python do GitHub ja cobre __pycache__, venv etc.)
+# ============================================================
+
+# Credenciais -- nunca versionar
+.env
+*.token
+
+# Dados brutos e cache: pesados, reprodutiveis, e o Tudum e
+# atualizado semanalmente. Versionar so o codigo, nao os dados.
+data/raw/
+data/cache/
+data/interim/
+
+# Saidas geradas
+outputs/
+*.png
+*.svg
+
